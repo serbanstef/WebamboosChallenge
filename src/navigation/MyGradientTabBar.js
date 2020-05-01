@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {Text, TouchableOpacity, StyleSheet, Keyboard} from 'react-native';
+import React from 'react';
+import {Text, TouchableOpacity, StyleSheet} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import TabBarIcon from './TabBarIcon';
 

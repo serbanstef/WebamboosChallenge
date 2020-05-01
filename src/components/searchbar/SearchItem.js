@@ -14,8 +14,8 @@ const SearchItem = ({searchString, removeFunction}) => {
         <View
           style={{
             position: 'absolute',
-            height: 15,
-            width: 15,
+            height: 13,
+            width: 13,
             backgroundColor: '#f72a2a',
             borderRadius: 45,
             right: -1,
@@ -34,15 +34,14 @@ export default SearchItem;
 
 const styles = StyleSheet.create({
   container: {
-    height: '55%',
+    height: 22,
     marginHorizontal: 3,
-    top: 1,
   },
   searchStringContainer: {
     borderRadius: 20,
-    backgroundColor: '#0f94db',
+    backgroundColor: '#5190ED',
     height: '100%',
-    //justifyContent: 'center',
+    justifyContent: 'center',
     paddingHorizontal: 10,
   },
 });
