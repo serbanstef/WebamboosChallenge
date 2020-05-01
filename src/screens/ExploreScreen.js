@@ -1,6 +1,21 @@
 import React from 'react';
-import WorkInProgress from '../components/WorkInProgress';
+import {StyleSheet, SafeAreaView} from 'react-native';
+import GradientStatusBar from '../components/GradientStatusBar';
+import SearchBar from '../components/searchbar/SearchBar';
 
-export default function ExploreScreen() {
-  return <WorkInProgress />;
-}
+const ExploreScreen = () => {
+  return (
+    <SafeAreaView style={styles.container}>
+      <GradientStatusBar />
+      <SearchBar />
+    </SafeAreaView>
+  );
+};
+
+export default ExploreScreen;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

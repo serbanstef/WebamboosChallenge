@@ -13,7 +13,9 @@ const Tab = createBottomTabNavigator();
 
 export default function TabNavigator() {
   return (
-    <Tab.Navigator tabBar={props => <MyGradientTabBar {...props} />}>
+    <Tab.Navigator
+      tabBar={props => <MyGradientTabBar {...props} />}
+      initialRouteName={'Explore'}>
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Explore" component={ExploreScreen} />
       <Tab.Screen name="Messages" component={MessagesScreen} />

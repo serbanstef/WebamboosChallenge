@@ -1,5 +1,5 @@
-import React from 'react';
-import {Text, TouchableOpacity, StyleSheet} from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {Text, TouchableOpacity, StyleSheet, Keyboard} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import TabBarIcon from './TabBarIcon';
 
@@ -12,7 +12,7 @@ function MyGradientTabBar({state, descriptors, navigation}) {
       start={{x: 0, y: 0}}
       end={{x: 1, y: 0}}
       colors={['#3b6be3', '#113799']}
-      style={styles.container}>
+      style={[styles.container]}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
         const label =
