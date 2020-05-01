@@ -5,7 +5,6 @@ import GradientStatusBar from '../components/GradientStatusBar';
 export default function WorkInProgress() {
   return (
     <>
-      <GradientStatusBar />
       <View style={styles.container}>
         <Text>Work in progress...</Text>
       </View>
