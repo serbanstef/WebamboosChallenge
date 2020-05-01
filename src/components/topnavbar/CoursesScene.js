@@ -1,14 +1,13 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import FiltersSection from '../filters/FiltersSection';
-import UserAvatar from '../UserAvatar';
-import SignalStrength from '../SignalStrength'
+import Rating from '../Rating';
 
 const CoursesScene = () => {
   return (
     <View style={[styles.scene, {backgroundColor: '#EEEEEE'}]} >
       <FiltersSection />
-      <SignalStrength />
+      <Rating />
     </View>)
 };
 
