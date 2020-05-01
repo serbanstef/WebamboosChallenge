@@ -11,7 +11,7 @@ function MyGradientTabBar({state, descriptors, navigation}) {
     <LinearGradient
       start={{x: 0, y: 0}}
       end={{x: 1, y: 0}}
-      colors={['#3b6be3', '#113799']}
+      colors={['#0A6EF2', '#0929C0']}
       style={[styles.container]}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
@@ -74,7 +74,7 @@ function MyGradientTabBar({state, descriptors, navigation}) {
             style={styles.button}>
             {selectIcon()}
             <Text
-              style={{color: isFocused ? '#f09124' : 'white', ...styles.text}}>
+              style={{color: isFocused ? '#F7B632' : 'white', ...styles.text}}>
               {label}
             </Text>
           </TouchableOpacity>

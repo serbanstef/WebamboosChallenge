@@ -1,11 +1,13 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import FiltersSection from '../filters/FiltersSection'
+import FiltersSection from '../filters/FiltersSection';
+import UserAvatar from '../UserAvatar';
 
 const CoursesScene = () => {
   return (
     <View style={[styles.scene, {backgroundColor: '#EEEEEE'}]} >
       <FiltersSection />
+      <UserAvatar />
     </View>)
 };
 

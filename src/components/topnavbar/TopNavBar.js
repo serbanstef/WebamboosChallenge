@@ -27,12 +27,12 @@ export default function TabViewExample() {
       renderTabBar={props => (
         <TabBar
           {...props}
-          indicatorStyle={{backgroundColor: '#FFC107'}}
+          indicatorStyle={{backgroundColor: '#F8B535'}}
           style={{backgroundColor: 'white', elevation: 0}}
           renderLabel={({route, focused, color}) => (
             <Text
               style={{
-                color: focused ? '#FFC107' : '#9E9E9E',
+                color: focused ? '#F8B535' : '#9D9D9D',
                 margin: 8,
                 fontSize: 16,
               }}>

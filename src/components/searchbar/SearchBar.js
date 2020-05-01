@@ -23,7 +23,7 @@ const SearchBar = () => {
     <LinearGradient
       start={{x: 0, y: 0}}
       end={{x: 1, y: 0}}
-      colors={['#3b6be3', '#113799']}
+      colors={['#0A6EF2', '#0929C0']}
       style={styles.container}>
       <View style={styles.searchInputContainer}>
         <Icon name="search" size={20} color={'grey'} style={{marginLeft: 7}} />

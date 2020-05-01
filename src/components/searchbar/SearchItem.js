@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   searchStringContainer: {
     borderRadius: 20,
-    backgroundColor: '#5190ED',
+    backgroundColor: '#4C94F6',
     height: '100%',
     justifyContent: 'center',
     paddingHorizontal: 10,

@@ -8,7 +8,7 @@ const SimpleFilter = ({filterTitle}) => {
     <TouchableOpacity
       style={[
         styles.container,
-        {backgroundColor: selected ? '#5190ED' : '#ffffff'},
+        {backgroundColor: selected ? '#4C94F6' : '#ffffff'},
       ]}
       onPress={() => setSelected(!selected)}>
       <Text style={{color: selected ? 'white' : 'black'}}>{filterTitle}</Text>
