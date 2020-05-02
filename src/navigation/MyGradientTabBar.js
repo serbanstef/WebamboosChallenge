@@ -50,9 +50,7 @@ function MyGradientTabBar({state, descriptors, navigation}) {
             case 'Explore':
               return <TabBarIcon name={'compass'} isFocused={isFocused} />;
             case 'Messages':
-              return (
-                <TabBarIcon name={'message-square'} isFocused={isFocused} />
-              );
+              return <TabBarIcon name={'message-square'} isFocused={isFocused} />;
             case 'Saved':
               return <TabBarIcon name={'star'} isFocused={isFocused} />;
             case 'Profile':
