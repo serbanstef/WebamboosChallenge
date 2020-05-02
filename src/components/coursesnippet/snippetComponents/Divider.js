@@ -7,7 +7,7 @@ const Divider = ({padding = 15}) => {
       <View style={{width: padding, height: 2, backgroundColor: 'white'}} />
       <View
         style={{
-          width: useWindowDimensions().width - padding*2,
+          width: useWindowDimensions().width - padding * 2,
           backgroundColor: '#F1F1F1',
         }}
       />

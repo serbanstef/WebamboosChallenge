@@ -7,7 +7,7 @@ import {
   Avatar,
   Divider,
   CourseUserIcons,
-} from '../coursesnippet';
+} from './snippetComponents';
 
 const CourseSnippet = ({
   withSeparator = true,
@@ -25,14 +25,12 @@ const CourseSnippet = ({
     <>
       <View style={styles.container}>
         <Avatar name={trainerName} starred={starred} />
-        <View style={{left: 10, top: 6}}>
-          <Text style={{fontSize: 17, fontFamily: 'Roboto-Medium'}}>
-            {courseTitle}
-          </Text>
+        <View style={styles.detailsContainer}>
+          <Text style={styles.title}>{courseTitle}</Text>
           <View style={{flexDirection: 'row'}}>
             <Text style={{fontSize: 12}}>{trainerName}</Text>
-            <Icon name={'circle-small'} size={20} color={'black'} />
-            <Text>{courseCategory}</Text>
+            <Icon name={'circle-small'} size={16} color={'black'} />
+            <Text style={{fontSize: 12}}>{courseCategory}</Text>
           </View>
           <View style={{flexDirection: 'row'}}>
             <SignalStrength signalStrength={signalStregth} size={16} />
@@ -41,16 +39,7 @@ const CourseSnippet = ({
             <Text>{views}</Text>
           </View>
         </View>
-        <Text
-          style={{
-            fontFamily: 'Roboto-Medium',
-            fontSize: 16,
-            position: 'absolute',
-            right: 15,
-            bottom: 23,
-          }}>
-          45£
-        </Text>
+        <Text style={styles.price}>{`${price}£`}</Text>
       </View>
       {withSeparator && <Divider />}
     </>
@@ -61,11 +50,26 @@ export default CourseSnippet;
 
 const styles = StyleSheet.create({
   container: {
-    height: 109,
+    height: 100,
     width: '100%',
     backgroundColor: 'white',
     paddingHorizontal: 10,
     flexDirection: 'row',
     paddingTop: 15,
+  },
+  price: {
+    fontFamily: 'Roboto-Medium',
+    fontSize: 16,
+    position: 'absolute',
+    right: 15,
+    bottom: 18,
+  },
+  detailsContainer: {
+    left: 10,
+    top: 6,
+  },
+  title: {
+    fontSize: 17,
+    fontFamily: 'Roboto-Medium',
   },
 });
