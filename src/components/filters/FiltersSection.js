@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {View, StyleSheet, ScrollView} from 'react-native';
 import SimpleFilter from './SimpleFilter';
 import PickerFilter from './PickerFilter';
-import SingleFilter from './SingleFilter';
+import FilterIconButton from './FilterIconButton';
 
 const FiltersSection = () => {
   const [simpleFilters] = useState([
@@ -24,7 +24,7 @@ const FiltersSection = () => {
         {pickerFilters.map(item => (
           <PickerFilter key={item[0]} values={item} />
         ))}
-        <SingleFilter />
+        <FilterIconButton />
       </View>
       <View style={styles.simpleFilters}>
         <ScrollView horizontal={true}>

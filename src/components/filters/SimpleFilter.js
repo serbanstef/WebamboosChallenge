@@ -1,5 +1,10 @@
 import React, {useState} from 'react';
-import {TouchableOpacity, Text, StyleSheet} from 'react-native';
+import {
+  TouchableOpacity,
+  Text,
+  StyleSheet,
+  useWindowDimensions,
+} from 'react-native';
 
 const SimpleFilter = ({filterTitle}) => {
   const [selected, setSelected] = useState(false);
@@ -8,7 +13,10 @@ const SimpleFilter = ({filterTitle}) => {
     <TouchableOpacity
       style={[
         styles.container,
-        {backgroundColor: selected ? '#4C94F6' : '#ffffff'},
+        {
+          backgroundColor: selected ? '#4C94F6' : '#ffffff',
+          paddingHorizontal: useWindowDimensions().width / 17,
+        },
       ]}
       onPress={() => setSelected(!selected)}>
       <Text style={{color: selected ? 'white' : 'black'}}>{filterTitle}</Text>
@@ -27,6 +35,5 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     borderRadius: 5,
     elevation: 1,
-    paddingHorizontal: 25,
   },
 });
