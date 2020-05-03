@@ -4,6 +4,9 @@ import CourseSnippet from '../courseSnippet';
 import SeeAllButton from './SeeAllButton';
 import {coursesFromTopTrainers} from './mockData';
 
+//Uses mock data. Normally the data would have been fetched from an API and stored in state.
+//Used a basic .map method to create the list. For larger lists the React Native <Flatlist> component could be considered.
+
 const fromTopTrainersList = () => {
   const [visibleCourses, setVisibleCourses] = useState(3);
 

@@ -11,6 +11,9 @@ import MyGradientTabBar from './MyGradientTabBar';
 
 const Tab = createBottomTabNavigator();
 
+//React navigation bottom navigator doesn't support a gradient background by default.
+//Therefore a custom TabBar (i.e MyGradientTabBar) component was needed.
+
 export default function TabNavigator() {
   return (
     <Tab.Navigator

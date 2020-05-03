@@ -10,16 +10,16 @@ import {
 } from './snippetComponents';
 
 const CourseSnippet = ({
-  withSeparator = true,
-  courseTitle = 'Usability Testing',
-  trainerName = 'Michelle Hunt',
-  courseCategory = 'UX Designer',
-  signalStregth = 2,
-  users = 3,
-  rating = 3,
-  views = '14',
-  price = '45',
-  starred = false,
+  withSeparator,
+  courseTitle,
+  trainerName,
+  courseCategory,
+  signalStregth,
+  users,
+  rating,
+  views,
+  price,
+  starred,
 }) => {
   return (
     <>
@@ -47,6 +47,19 @@ const CourseSnippet = ({
 };
 
 export default CourseSnippet;
+
+CourseSnippet.defaultProps = {
+  withSeparator: true,
+  courseTitle: 'Usability Testing',
+  trainerName: 'Michelle Hunt',
+  courseCategory: 'UX Designer',
+  signalStregth: 2,
+  users: 3,
+  rating: 3,
+  views: '14',
+  price: '45',
+  starred: false,
+};
 
 const styles = StyleSheet.create({
   container: {

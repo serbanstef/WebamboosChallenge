@@ -3,6 +3,9 @@ import {View, Text, StyleSheet} from 'react-native';
 import CourseSnippet from '../courseSnippet';
 import {allCourses} from './mockData';
 
+//Uses mock data. Normally the data would have been fetched from an API and stored in state.
+//Used a basic .map method to create the list. For larger lists the React Native <Flatlist> component could be considered.
+
 const AllCoursesList = () => {
   return (
     <View style={{width: '100%', backgroundColor: 'white', marginTop: 15}}>
