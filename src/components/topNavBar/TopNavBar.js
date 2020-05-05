@@ -6,7 +6,7 @@ import TrainersScene from './TrainersScene';
 
 const initialLayout = {width: Dimensions.get('window').width};
 
-export default function TabViewExample() {
+export default function TopNavBar() {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     {key: 'courses', title: 'COURSES'},

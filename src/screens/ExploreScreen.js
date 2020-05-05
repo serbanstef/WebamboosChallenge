@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView, ScrollView} from 'react-native';
 import GradientStatusBar from '../components/GradientStatusBar';
-import SearchBar from '../components/searchBar/SearchBar';
-import TopNavBar from '../components/topNavBar/TopNavBar';
+import SearchBar from '../components/searchBar';
+import TopNavBar from '../components/topNavBar';
 
 const ExploreScreen = () => {
   return (

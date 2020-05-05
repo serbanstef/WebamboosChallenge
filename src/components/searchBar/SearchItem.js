@@ -8,21 +8,10 @@ const SearchItem = ({searchString, removeFunction}) => {
   return (
     <View style={styles.container}>
       <View style={styles.searchStringContainer}>
-        <Text style={{color: 'white', fontSize: 13}}>{searchString}</Text>
+        <Text style={styles.searchString}>{searchString}</Text>
       </View>
       <TouchableWithoutFeedback onPress={handleRemoveButtonPress}>
-        <View
-          style={{
-            position: 'absolute',
-            height: 13,
-            width: 13,
-            backgroundColor: '#f72a2a',
-            borderRadius: 45,
-            right: -1,
-            top: -5,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
+        <View style={styles.removeButton}>
           <Icon name="close" size={9} color={'white'} />
         </View>
       </TouchableWithoutFeedback>
@@ -43,5 +32,20 @@ const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'center',
     paddingHorizontal: 10,
+  },
+  searchString: {
+    color: 'white',
+    fontSize: 13,
+  },
+  removeButton: {
+    position: 'absolute',
+    height: 13,
+    width: 13,
+    backgroundColor: '#f72a2a',
+    borderRadius: 45,
+    right: -1,
+    top: -5,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
